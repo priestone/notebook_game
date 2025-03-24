@@ -17,4 +17,7 @@ export default defineConfig({
     },
   },
   assetsInclude: ["**/*.jpg", "**/*.png", "**/*.svg"],
+  server: {
+    historyApiFallback: true,
+  },
 });

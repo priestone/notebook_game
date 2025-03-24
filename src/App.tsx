@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { RewardsProvider } from "./context/RewardsContext";
 import StartScreen from "./components/StartScreen";
 import Page1 from "./components/Page1";
