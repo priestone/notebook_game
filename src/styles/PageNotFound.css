@@ -1,0 +1,137 @@
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+  background-image: linear-gradient(
+      90deg,
+      transparent 79px,
+      #abced4 79px,
+      #abced4 81px,
+      transparent 81px
+    ),
+    linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
+  padding: 2rem;
+}
+
+.not-found-content {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border: 3px solid #2c3e50;
+  max-width: 600px;
+  width: 100%;
+}
+
+.not-found-content h1 {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 6rem;
+  color: #e74c3c;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  animation: bounce 2s infinite;
+}
+
+.not-found-content h2 {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin: 1rem 0;
+}
+
+.not-found-content p {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 1.5rem;
+  color: #34495e;
+  margin: 1.5rem 0;
+  line-height: 1.6;
+}
+
+.home-button {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 1.5rem;
+  padding: 1rem 2.5rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* 반응형 스타일 */
+@media screen and (max-width: 768px) {
+  .not-found-container {
+    padding: 1rem;
+  }
+
+  .not-found-content {
+    padding: 2rem;
+  }
+
+  .not-found-content h1 {
+    font-size: 4rem;
+  }
+
+  .not-found-content h2 {
+    font-size: 2rem;
+  }
+
+  .not-found-content p {
+    font-size: 1.3rem;
+  }
+
+  .home-button {
+    font-size: 1.3rem;
+    padding: 0.8rem 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .not-found-container {
+    padding: 0.5rem;
+  }
+
+  .not-found-content {
+    padding: 1.5rem;
+  }
+
+  .not-found-content h1 {
+    font-size: 3rem;
+  }
+
+  .not-found-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .not-found-content p {
+    font-size: 1.1rem;
+  }
+
+  .home-button {
+    font-size: 1.1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
