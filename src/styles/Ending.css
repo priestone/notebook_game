@@ -1,0 +1,82 @@
+.ending-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+  background-image: linear-gradient(
+      90deg,
+      transparent 79px,
+      #abced4 79px,
+      #abced4 81px,
+      transparent 81px
+    ),
+    linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
+  padding: 2rem;
+}
+
+.ending-content {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  border: 3px solid #2c3e50;
+}
+
+.ending-content h1 {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 3rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.play-time {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 2rem;
+  color: #e74c3c;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: rgba(236, 240, 241, 0.8);
+  border-radius: 10px;
+  border: 2px dashed #95a5a6;
+}
+
+.ending-message {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.hidden-ending-hint {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 1.4rem;
+  color: #8e44ad;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.home-button {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 1.6rem;
+  padding: 1rem 3rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

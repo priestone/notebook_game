@@ -1,0 +1,61 @@
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #fff;
+  background-image: linear-gradient(
+      90deg,
+      transparent 79px,
+      #abced4 79px,
+      #abced4 81px,
+      transparent 81px
+    ),
+    linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
+  padding: 20px;
+}
+
+.game-title {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  position: relative;
+  padding: 10px 20px;
+  border: 2px solid #2c3e50;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.start-button {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.start-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.start-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 전체 페이지에 공책 질감 추가 */
+body {
+  margin: 0;
+  background-color: #f0f0f0;
+}
