@@ -13,7 +13,6 @@ export default defineConfig({
       output: {
         assetFileNames: "assets/[name].[ext]",
       },
-      external: ["react", "react-dom", "react-dom/client"],
     },
   },
   assetsInclude: ["**/*.jpg", "**/*.png", "**/*.svg"],
