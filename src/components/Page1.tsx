@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../styles/Page1.css";
 
 type Job = "전사" | "궁수" | "마법사" | "도적";

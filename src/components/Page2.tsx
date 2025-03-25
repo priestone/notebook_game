@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../styles/Page2.css";
 
 type Equipment =
@@ -13,6 +13,7 @@ interface DiceResult {
 }
 
 const Page2: React.FC = () => {
+  const navigate = useNavigate();
   const [diceResult, setDiceResult] = useState<DiceResult | null>(null);
   const [isRolling, setIsRolling] = useState(false);
   const [selectedEquipment, setSelectedEquipment] = useState<Equipment | null>(

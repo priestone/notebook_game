@@ -80,3 +80,29 @@
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* 기본 스타일 */
+.ending-container {
+  padding: 20px;
+}
+
+/* 반응형 스타일 */
+@media screen and (max-width: 770px) {
+  .ending-container h1 {
+    font-size: 1.5rem; /* 제목 크기 줄이기 */
+  }
+
+  .ending-container p {
+    font-size: 1rem; /* 본문 크기 줄이기 */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ending-container h1 {
+    font-size: 1.3rem; /* 제목 크기 더 줄이기 */
+  }
+
+  .ending-container p {
+    font-size: 0.9rem; /* 본문 크기 더 줄이기 */
+  }
+}
